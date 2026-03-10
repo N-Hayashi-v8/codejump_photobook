@@ -1,0 +1,185 @@
+body{
+  font-family: "Hiragino Kaku Gothic ProN",
+               "Hiragino Sans",
+               Meiryo,
+               -apple-system,
+               BlinkMacSystemFont,
+               "Segoe UI",
+               sans-serif;
+  color: #333;
+  background-color: #f4f9ff;
+
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+.header{
+  padding: 20px 0;
+  margin: 50px auto 0;
+  text-align: left;
+}
+.header__link{
+  text-decoration: none;
+}
+.header__logo{
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* メインビジュアル */
+.main-visual{
+  padding: 20px 0;
+}
+.main-visual__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* INDEX */
+.index{
+  padding: 20px 0;
+}
+.index__container{
+  background-color: #ffffff;
+  align-items: center;
+  text-align: left;
+  padding: 20px 200px;
+  line-height: 2.5;
+}
+.index__title{
+  font-size: 18px;
+  font-weight: bold;
+}
+.index__list{
+  list-style: decimal;
+  padding-left: 1.5em;
+}
+
+/* DETAIL */
+.detail{
+  max-width: 600px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.detail__title{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.detail__inner{
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.detail__left{
+  flex: 1;
+}
+.detail__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.detail__right{
+  flex: 1;
+}
+.detail__name{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+.detail__list{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+
+  padding: 16px 0;
+  margin-bottom: 25px;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+.detail__list th,
+.detail__list td{
+  padding: 6px 0;
+  font-size: 14px;
+  vertical-align: top;
+}
+.detail__list th{
+  width: 25%;
+  font-weight: normal;
+}
+.detail__list td{
+  width: 75%;
+}
+.detail__text{
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.detail__link{
+  font-size: 14px;
+  text-decoration: underline;
+}
+.detail__link:hover{
+  opacity: 0.8;
+}
+
+/* フッター */
+.footer{
+  max-width: 600px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.footer__copyright{
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  /* 共通 */
+  body{
+    max-width: none;
+    margin: 0;
+  }
+
+  /* ヘッダー */
+  .header{
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+  /* メインビジュアル */
+  .main-visual{
+    padding: 0 10px;
+  }
+
+  /* INDEX */
+  .index__container{
+    padding: 20px 40px;
+  }
+
+  /* DETAIL */
+  .detail{
+    padding: 0 20px;
+  }
+  .detail__inner{
+    flex-direction: column;
+  }
+  .detail__left{
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
+  .detail__img{
+    width: 100%;
+    height: auto;
+  }
+  .detail__right{
+    width: 100%;
+  }
+
+  /* フッター */
+  .footer{
+    padding: 20px;
+  }
+}
